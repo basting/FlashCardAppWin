@@ -24,10 +24,10 @@ namespace WindowsFormsApplication1
 
         private void initFlashCards()
         {
-            flashCardList.Add("StringBuffer is thread-safe <br> "+
+            flashCardList.Add("StringBuffer is thread-safe \r\n"+
                                "StringBuilder is not thread-safe");
 
-            flashCardList.Add("HashTable is thread-safe <br> " +
+            flashCardList.Add("HashTable is thread-safe \r\n" +
                                "HashMap is not thread-safe");
 
             flashCardList.Add("Two ways to create threads - Runnable & Thread");

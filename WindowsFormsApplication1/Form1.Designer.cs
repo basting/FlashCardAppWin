@@ -72,6 +72,7 @@
             // 
             // txtFlashCard
             // 
+            this.txtFlashCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFlashCard.Location = new System.Drawing.Point(5, 85);
             this.txtFlashCard.Multiline = true;
             this.txtFlashCard.Name = "txtFlashCard";
@@ -87,6 +88,7 @@
             this.txtCurrentCard.ReadOnly = true;
             this.txtCurrentCard.Size = new System.Drawing.Size(67, 20);
             this.txtCurrentCard.TabIndex = 2;
+            this.txtCurrentCard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTotalCards
             // 
