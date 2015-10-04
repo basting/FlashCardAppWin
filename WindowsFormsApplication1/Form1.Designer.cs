@@ -77,6 +77,7 @@
             this.txtFlashCard.Multiline = true;
             this.txtFlashCard.Name = "txtFlashCard";
             this.txtFlashCard.ReadOnly = true;
+            this.txtFlashCard.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtFlashCard.Size = new System.Drawing.Size(310, 206);
             this.txtFlashCard.TabIndex = 1;
             // 
