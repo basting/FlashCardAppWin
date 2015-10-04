@@ -24,13 +24,18 @@ namespace WindowsFormsApplication1
 
         private void initFlashCards()
         {
-            flashCardList.Add("StringBuffer is thread-safe \r\n"+
+            flashCardList.Add("StringBuffer is thread-safe\r\n"+
                                "StringBuilder is not thread-safe");
 
-            flashCardList.Add("HashTable is thread-safe \r\n" +
+            flashCardList.Add("HashTable is thread-safe\r\n" +
                                "HashMap is not thread-safe");
 
-            flashCardList.Add("Two ways to create threads - Runnable & Thread");
+            flashCardList.Add("Two ways to create threads\r\n"+
+                "* Implement Runnable interface\r\n"+
+                "* Extend Thread class");
+
+            flashCardList.Add("Best datastructure to implement Stack\r\n" +
+                "** Linked List **");
 
             //btnLeft.Click += new EventHandler(this.btnLeft_Click);
             //btnRight.Click += new EventHandler(this.btnRight_Click);
