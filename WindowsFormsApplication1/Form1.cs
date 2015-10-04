@@ -35,6 +35,15 @@ namespace WindowsFormsApplication1
                 "* Extend Thread class");
 
             flashCardList.Add("Best datastructure to implement Stack\r\n" +
+                "Best datastructure to implement Stack\r\n" +
+                "Best datastructure to implement Stack\r\n" +
+                "Best datastructure to implement Stack\r\n" +
+                "Best datastructure to implement Stack\r\n" +
+                "Best datastructure to implement Stack\r\n" +
+                "Best datastructure to implement Stack\r\n" +
+                "Best datastructure to implement Stack\r\n" +
+                "Best datastructure to implement Stack\r\n" +
+                "Best datastructure to implement Stack\r\n" +
                 "** Linked List **");
 
             //btnLeft.Click += new EventHandler(this.btnLeft_Click);
@@ -72,6 +81,7 @@ namespace WindowsFormsApplication1
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
+            //MessageBox.Show(keyData.ToString());
             if (keyData == Keys.Left)
             {
                 btnLeft.PerformClick();

@@ -79,7 +79,6 @@
             this.txtFlashCard.ReadOnly = true;
             this.txtFlashCard.Size = new System.Drawing.Size(310, 206);
             this.txtFlashCard.TabIndex = 1;
-            this.txtFlashCard.Click += new System.EventHandler(this.btnLeft_Click);
             // 
             // txtCurrentCard
             // 
