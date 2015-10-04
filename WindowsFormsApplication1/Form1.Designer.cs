@@ -53,7 +53,6 @@
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(152, 73);
             this.btnRight.TabIndex = 1;
-            this.btnRight.Text = "right";
             this.btnRight.UseVisualStyleBackColor = true;
             // 
             // btnLeft
@@ -64,7 +63,6 @@
             this.btnLeft.Name = "btnLeft";
             this.btnLeft.Size = new System.Drawing.Size(152, 73);
             this.btnLeft.TabIndex = 0;
-            this.btnLeft.Text = "left";
             this.btnLeft.UseVisualStyleBackColor = true;
             // 
             // txtFlashCard
@@ -83,8 +81,11 @@
             this.ClientSize = new System.Drawing.Size(317, 291);
             this.Controls.Add(this.txtFlashCard);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.TopMost = true;
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
