@@ -37,14 +37,23 @@ namespace WindowsFormsApplication1
             txtFlashCard.Text = flashCardList[currentPosition].ToString();
             this.ActiveControl = txtFlashCard;
 
+            updateCount();
+
             //enableDisableKeys();
 
+        }
+
+        private void updateCount()
+        {
+            txtTotalCards.Text = flashCardList.Count.ToString();
+            txtCurrentCard.Text = (currentPosition + 1).ToString();
         }
 
         private void btnRight_Click(object sender, EventArgs e)
         {
             currentPosition = getNextIndexForRightKey(currentPosition);
             txtFlashCard.Text = flashCardList[currentPosition].ToString();
+            updateCount();
             //enableDisableKeys();
         }
 
@@ -52,6 +61,7 @@ namespace WindowsFormsApplication1
         {
             currentPosition = getNextIndexForLeftKey(currentPosition);
             txtFlashCard.Text = flashCardList[currentPosition].ToString();
+            updateCount();
             //enableDisableKeys();    
         }
 
@@ -87,6 +97,7 @@ namespace WindowsFormsApplication1
             return currPos + 1;
         }
 
+        
         /*private void enableDisableKeys()
         {
             if (currentPosition == 0)
