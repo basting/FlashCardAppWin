@@ -11,12 +11,12 @@ using System.Collections;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class frmFlashCards : Form
     {
         private ArrayList flashCardList = new ArrayList();
         private int currentPosition = 0;
        
-        public Form1()
+        public frmFlashCards()
         {
             InitializeComponent();
             initFlashCards();
