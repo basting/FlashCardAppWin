@@ -24,20 +24,72 @@ namespace WindowsFormsApplication1
 
         private void initFlashCards()
         {
-            flashCardList.Add("StringBuffer is thread-safe \n "+
+            flashCardList.Add("StringBuffer is thread-safe <br> "+
                                "StringBuilder is not thread-safe");
 
-            flashCardList.Add("HashTable is thread-safe \n " +
+            flashCardList.Add("HashTable is thread-safe <br> " +
                                "HashMap is not thread-safe");
 
             flashCardList.Add("Two ways to create threads - Runnable & Thread");
 
-            btnLeft.Click += new EventHandler(this.btnLeft_Click);
-            btnRight.Click += new EventHandler(this.btnRight_Click);
+            //btnLeft.Click += new EventHandler(this.btnLeft_Click);
+            //btnRight.Click += new EventHandler(this.btnRight_Click);
             txtFlashCard.Text = flashCardList[currentPosition].ToString();
-            
-            /*
-            if(currentPosition == 0)
+            this.ActiveControl = txtFlashCard;
+
+            //enableDisableKeys();
+
+        }
+
+        private void btnRight_Click(object sender, EventArgs e)
+        {
+            currentPosition = getNextIndexForRightKey(currentPosition);
+            txtFlashCard.Text = flashCardList[currentPosition].ToString();
+            //enableDisableKeys();
+        }
+
+        private void btnLeft_Click(object sender, EventArgs e)
+        {
+            currentPosition = getNextIndexForLeftKey(currentPosition);
+            txtFlashCard.Text = flashCardList[currentPosition].ToString();
+            //enableDisableKeys();    
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Left)
+            {
+                btnLeft.PerformClick();
+            }
+            else if (keyData == Keys.Right)
+            {
+                btnRight.PerformClick();
+            }
+            return true;
+            //return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private int getNextIndexForLeftKey(int currPos)
+        {
+            if (currPos <= 0)
+            {
+                return flashCardList.Count - 1;
+            }
+            return currPos - 1;
+        }
+
+        private int getNextIndexForRightKey(int currPos)
+        {
+            if (currPos >= flashCardList.Count - 1)
+            {
+                return 0;
+            }
+            return currPos + 1;
+        }
+
+        /*private void enableDisableKeys()
+        {
+            if (currentPosition == 0)
             {
                 btnLeft.Enabled = false;
             }
@@ -46,34 +98,14 @@ namespace WindowsFormsApplication1
                 btnLeft.Enabled = true;
             }
 
-            if (currentPosition == flashCardList.Count-1)
+            if (currentPosition == flashCardList.Count - 1)
             {
                 btnRight.Enabled = false;
             }
             else
             {
                 btnRight.Enabled = true;
-            }*/
-
-        }
-
-        private void btnRight_Click(object sender, EventArgs e)
-        {
-            if (currentPosition >= flashCardList.Count - 1)
-            {
-                return;
             }
-            txtFlashCard.Text = flashCardList[++currentPosition].ToString();
-        }
-
-        private void btnLeft_Click(object sender, EventArgs e)
-        {
-            if (currentPosition <= 0)
-            {
-                return;
-            }
-            txtFlashCard.Text = flashCardList[--currentPosition].ToString();
-        }
-        
+        }*/
     }
 }

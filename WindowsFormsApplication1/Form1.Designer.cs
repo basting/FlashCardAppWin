@@ -54,6 +54,7 @@
             this.btnRight.Size = new System.Drawing.Size(152, 73);
             this.btnRight.TabIndex = 1;
             this.btnRight.UseVisualStyleBackColor = true;
+            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
             // btnLeft
             // 
@@ -64,6 +65,7 @@
             this.btnLeft.Size = new System.Drawing.Size(152, 73);
             this.btnLeft.TabIndex = 0;
             this.btnLeft.UseVisualStyleBackColor = true;
+            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
             // 
             // txtFlashCard
             // 
@@ -73,6 +75,7 @@
             this.txtFlashCard.ReadOnly = true;
             this.txtFlashCard.Size = new System.Drawing.Size(310, 206);
             this.txtFlashCard.TabIndex = 1;
+            this.txtFlashCard.Click += new System.EventHandler(this.btnLeft_Click);
             // 
             // frmFlashCards
             // 
