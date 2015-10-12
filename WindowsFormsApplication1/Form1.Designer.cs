@@ -149,6 +149,7 @@
             this.toolStripExit.Name = "toolStripExit";
             this.toolStripExit.Size = new System.Drawing.Size(152, 22);
             this.toolStripExit.Text = "Exit";
+            this.toolStripExit.Click += new System.EventHandler(this.toolStripExit_Click);
             // 
             // frmFlashCards
             // 

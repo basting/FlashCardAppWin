@@ -103,7 +103,12 @@ namespace WindowsFormsApplication1
             return currPos + 1;
         }
 
-        
+        private void toolStripExit_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+
         /*private void enableDisableKeys()
         {
             if (currentPosition == 0)
