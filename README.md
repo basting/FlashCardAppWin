@@ -1,4 +1,4 @@
-* Flash card app for Windows
+# Flash card app for Windows
 
 A flash card app developed using C# with below features
 
